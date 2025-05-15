@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
 import Footer from '../Shared/Footer/Footer';
 import { Outlet } from 'react-router-dom';
-import { Novatrix } from "uvcanvas"
+
 
 const Main = () => {
     const [isDark, setIsDark] = useState(false);
@@ -30,8 +30,7 @@ const Main = () => {
         });
     };
     return (
-        <div className="relative min-h-screen">
-            <Novatrix style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: -1 }} />
+        <div className="min-h-screen">
             <Navbar handleThemeToggle={handleThemeToggle}isDark={isDark}></Navbar>
             <div className='min-h-[calc(100vh-273px)]'>
                 <Outlet></Outlet>

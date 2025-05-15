@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
@@ -46,6 +45,7 @@ const Categories = () => {
                     <h3 className="text-md font-semibold text-gray-700">{cat.name}</h3>
                 </motion.div>
             ))}
+            <button className="btn mt-10 btn-success bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent"><Link to="https://www.sylhet.gov.bd/">Learn More About Sylhet</Link></button>
         </div>
     );
 };
