@@ -49,7 +49,7 @@ const Banner = () => {
                         />
                     </span>
                     </h1>
-                    <p className="mt-4 text-lg text-white w-6/12">
+                    <p className="mt-4 text-lg w-6/12">
                         Your trusted guide to everything in Sylhet – transport, health, tourism, jobs, and more.<span className='text-4xl'>🌿</span>
                     </p>
                 </div>
